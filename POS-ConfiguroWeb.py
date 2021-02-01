@@ -246,7 +246,7 @@ class Bill_App:
 def total(self):
     if (self.c_name.get == "" or self.phone.get() == ""):
         messagebox.showerror("Error", "Complete los datos del cliente!!")
-    self.nu = self.cocosete.get()*12000
+    self.nu = self.cocosete.get()*1200
     self.no = self.supercoco.get()*4000
     self.la = self.nucita.get()*1000
     self.ore = self.oreo.get()*2000
@@ -281,7 +281,7 @@ def total(self):
         self.da)
 
     self.total_gro.set(str(total_grocery_price)+" COP")
-    self.b.set(str(round(total_grocery_price*0.01, 3))+" COP")
+    self.b.set(str(round(total_grocery_price*0.1, 3))+" COP")
 
     self.so = self.jabon.get()*3000
     self.sh = self.shampoo.get()*18000
@@ -305,7 +305,7 @@ def total(self):
     self.total_all_bill = (total_snacks_price +
                            total_grocery_price +
                            total_hygine_price +
-                           (round(total_grocery_price*0.01, 3)) +
+                           (round(total_grocery_price*0.1, 3)) +
                            (round(total_hygine_price*0.07, 3)) +
                            (round(total_snacks_price*0.05, 3)))
     self.total_all_bil = str(self.total_all_bill)+" COP"
