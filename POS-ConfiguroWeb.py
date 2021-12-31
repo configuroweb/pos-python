@@ -10,8 +10,8 @@ class Bill_App:
         self.root = root
         self.root.geometry("1350x700+0+0")
         self.root.configure(bg="#fd7e1b")
-        self.root.title("Sistema POS ConfiguroWeb")
-        title = Label(self.root, text="Sistema POS ConfiguroWeb", bd=12, relief=RIDGE, font=(
+        self.root.title("Software Facturacion")
+        title = Label(self.root, text="Software Facturacion", bd=12, relief=RIDGE, font=(
             "Arial Black", 20), bg="#3891c8", fg="white").pack(fill=X)
         # ===================================variables=======================================================================================
         self.cocosete = IntVar()
